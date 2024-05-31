@@ -1,7 +1,4 @@
 <!doctype html>
-<!--
-Tutorial: https://www.youtube.com/watch?v=zxxB9SFh9p4
--->
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -12,30 +9,45 @@ Tutorial: https://www.youtube.com/watch?v=zxxB9SFh9p4
 
     <body>
         <div id="conteudo">
-            <h2>BORA PRO ARRAIAR JUNINO?</h2>
-            <div style="margin: auto; width: 170px">
-                <button
-                    style="position: fixed; display: block"
-                    class="btn"
-                    onclick="sim()"
-                >
-                    SIM
-                </button>
-                <button
-                    class="btn"
-                    onclick="desvia(this)"
-                    onmouseover="desvia(this)"
-                    style="position: absolute"
-                >
-                    NÃO
-                </button>
-            </div>
+            <section id="titulo">
+                <h1>Ocê tá convidado pro nosso arraiá junino, aceitas?</h1>
+                <div style="margin: auto; width: 170px">
+                    <button
+                        style="position: fixed; display: block"
+                        class="btn"
+                        onclick="sim()"
+                    >
+                        SIM
+                    </button>
+                    <button
+                        class="btn"
+                        onclick="desvia(this)"
+                        onmouseover="desvia(this)"
+                        style="position: absolute"
+                    >
+                        NÃO
+                    </button>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <p>vai ser dia 15.06 ás 15h.</p>
+                    <img
+                        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fistoe.com.br%2Fwp-content%2Fuploads%2F2020%2F07%2Fzeca-pagodinho.jpg&f=1&nofb=1&ipt=5b6ed3f84d41f14bacda09d0b40208bd25c041409539a1fbd6c86f24a9345a2b&ipo=images"
+                        alt="zeca pagodinho"
+                    />
+                </div>
+            </section>
         </div>
     </body>
     <style>
+        #titulo {
+            background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.elo7.com.br%2Fproduct%2Fzoom%2F3078A3F%2Fbandeirinha-festa-junina-sao-joao-colorida-seda-1000-metros-bandeirinha-colorida-sao-joao.jpg&f=1&nofb=1&ipt=0427e798b08d7ba0316e66944e30bb7c652377732f6202e49a2be96d335b6fe2&ipo=images");
+            width: 100%;
+            height: auto;
+        }
         #conteudo {
-            background: #ff7a7a;
-            background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fistoe.com.br%2Fwp-content%2Fuploads%2F2020%2F07%2Fzeca-pagodinho.jpg&f=1&nofb=1&ipt=5b6ed3f84d41f14bacda09d0b40208bd25c041409539a1fbd6c86f24a9345a2b&ipo=images");
+            background: #ff9f00;
             width: 100%;
             height: 100%;
             position: fixed;
@@ -58,7 +70,7 @@ Tutorial: https://www.youtube.com/watch?v=zxxB9SFh9p4
 
     <script>
         function sim() {
-            alert("Você aceitou namorar comigo! :)");
+            alert("Que delícia que você vem! link para confirmação abaixo :)");
             // redireciona para um URL após clicar no SIM
             location.href = "https://music.youtube.com/watch?v=izGwDsrQ1eQ";
         }
